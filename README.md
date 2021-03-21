@@ -1,5 +1,5 @@
 
-CxFlowMasterPush-Test1
+CxFlowMasterPush-Test1 
 
 
 ![CircleCI](https://img.shields.io/circleci/build/github/checkmarx-ltd/cx-flow)
@@ -376,7 +376,7 @@ When result is provided it must be one of the following:
 ## Override Files
 When providing --config override file you can override many elements associated with the bug tracking within Jira.
 
-```json
+json
 {
 "application": "test app", //WebHook Web Service Only
 "branches": ["develop", "master"], //WebHook Web Service Only
@@ -431,7 +431,7 @@ When providing --config override file you can override many elements associated 
  "state": ["Urgent", "Confirmed"]
 }
 }
-```
+
 All overrides are optional.  If a value is not provided, the default provided in the application.yml is used.  If a value is provided with an empty attribute, it is overridden as empty.  i.e. if severity is high, medium within the default configuration and an empty filter attribute is provided, it will no long apply any filters ("filters":{})
 
 ## Post-back Mode
